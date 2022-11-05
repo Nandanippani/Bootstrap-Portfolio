@@ -1,0 +1,119 @@
+/* Used CSS variables */
+:root {
+
+    --color-white: #fff;
+    --bgcolor-white: #fff;
+}
+
+/* Global css */
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*  left side header css */
+
+.header {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    background-color: #040b14;
+    position: fixed;
+    color: var(--color-white);
+}
+
+.my-name {
+    text-align: center;
+    font-size: xx-large;
+    font-family: "Poppins", sans-serif;
+}
+
+.social-links a,
+.nav-link {
+    color: var(--color-white);
+}
+
+.social-links a {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #212431;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+i {
+    padding-right: 10px;
+}
+
+#avatar,
+.social-links {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.social-links a:hover {
+    background-color: #149ddd;git
+}
+
+.fa-twitter {
+    padding-right: 6px;
+}
+
+.fa-instagram {
+    padding-right: 8px;
+}
+
+#avatar-outer {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: 15px auto;
+    background-color: #212431;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--bgcolor-white);
+    background-image: url(../images/woman-avatar-icon.svg);
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+
+/* main content */
+
+.main-content {
+    left: 300px;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    background-color: yellow;
+    width: calc(100vw - 300px);
+}
