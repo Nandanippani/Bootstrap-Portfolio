@@ -9,6 +9,13 @@
 
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --diff: calc(var(--max-size) - var(--min-size));
+    --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 420px) / (1200 - 420)));
+    /* Ranges from 421px to 1199px */
+}
+
+body {
+    background-image: url("../images/02-portfolio-3.jpg");
 }
 
 a {
@@ -72,7 +79,7 @@ i {
 }
 
 .social-links a:hover {
-    background-color: #149ddd;git
+    background-color: #149ddd;
 }
 
 .fa-twitter {
@@ -114,6 +121,68 @@ i {
     bottom: 0;
     top: 0;
     position: fixed;
-    background-color: yellow;
+    overflow-y: auto;
     width: calc(100vw - 300px);
 }
+
+section {
+    height: calc(100vh);
+    border: 1px solid green;
+}
+
+.container-fluid section:not(:first-child) {
+    background-color: var(--bgcolor-white);
+}
+
+.big-name {
+    --max-size: 80;
+    --min-size: 10;
+    font-size: var(--responsive);
+    color: midnightblue;
+    font-weight: bold;
+    letter-spacing: 2.5pt;
+    text-shadow: 3px 3px 6px #0F1854;
+}
+
+.my-title {
+    --max-size: 40;
+    --min-size: 5;
+    font-size: var(--responsive);
+    color: #212431;
+    letter-spacing: 5pt;
+}
+
+.section-title {
+
+    font-size: x-large;
+    color: #040b14;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.section-title div {
+    border-bottom: 1px solid lightgray;
+}
+
+/* About */
+
+.details {
+    display: flex;
+}
+
+.details div {
+    padding: 0 20px;
+}
+
+.about-photo {
+    background-image: url("../images/02-hero-bg.jpg");
+    width: 30%
+}
+
+.about-detail {
+    width: 70%;
+}
+
+
+
