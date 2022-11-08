@@ -155,14 +155,14 @@ section {
 .section-title {
 
     font-size: x-large;
-    color: #040b14;
+    color: #212431;
     font-weight: bold;
     padding: 10px 15px;
     margin-bottom: 20px;
 }
 
 .section-title div {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 3px solid grey;
 }
 
 /* About */
@@ -186,63 +186,12 @@ img {
 
 /* Portfolio */
 
-.project {
-    padding: 0 15px 15px 0;
+.cardContainer {
+    padding: 0 0 15px 0;
 }
 
-.pr1,
-.pr2,
-.pr3 {
-    width: 100%;
-    height: 18em;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.pr1 {
-    background-image: url("../images/portfolio-1.jpg");
-}
-
-.pr1:hover .project-desc,
-.pr2:hover .project-desc,
-.pr3:hover .project-desc {
-    display: block;
-}
-
-.pr1:hover,
-.pr2:hover,
-.pr3:hover {
-    transform: scale(1.04);
-}
-
-
-
-.pr2 {
-    background-image: url("../images/portfolio-6.jpg");
-}
-
-.pr3 {
-    background-image: url("../images/portfolio-8.jpg");
-}
-
-#projects {
-    margin-left: 0;
-}
-
-.project-title,
-.project-desc {
-    width: 100%;
-    background-color: #040b14;
-    opacity: 0.5;
-    padding: 5px;
-    color: #fff;
-}
-
-.project-desc {
-    opacity: 0.3;
-    display: none;
+.card {
+    width: 97%;
 }
 
 /* Contact */
@@ -263,6 +212,20 @@ img {
 #em-id,
 #num {
     font-size: small;
+}
+
+/* Skills */
+
+.skills {
+    list-style-type: none;
+}
+
+.skills li {
+    padding: 15px;
+    margin: 10px;
+    border-left: 5px solid lightgrey;
+    border-bottom: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
 }
 
 
@@ -301,9 +264,6 @@ img {
         display: none;
     }
 
-    .big-name {
-        margin: auto;
-    }
 }
 
 
