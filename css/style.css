@@ -184,6 +184,20 @@ img {
     width: 70%;
 }
 
+/* Skills */
+
+.skills {
+    list-style-type: none;
+}
+
+.skills li {
+    padding: 15px;
+    margin: 10px;
+    border-left: 5px solid lightgrey;
+    border-bottom: 1px solid lightgray;
+    border-bottom-left-radius: 10px;
+}
+
 /* Portfolio */
 
 .cardContainer {
@@ -198,6 +212,7 @@ img {
 
 #contact-details {
     margin-left: 15px;
+    text-align: center;
 }
 
 #loc,
@@ -214,18 +229,15 @@ img {
     font-size: small;
 }
 
-/* Skills */
+.social-links-1 {
+    margin-left: 15px;
+    padding-top: 25px;
+    text-align: center;
 
-.skills {
-    list-style-type: none;
 }
 
-.skills li {
-    padding: 15px;
-    margin: 10px;
-    border-left: 5px solid lightgrey;
-    border-bottom: 1px solid lightgray;
-    border-bottom-left-radius: 10px;
+.social-links-1 a {
+    font-size: larger;
 }
 
 
