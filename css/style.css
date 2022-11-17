@@ -106,8 +106,10 @@ i {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: var(--bgcolor-white);
-    background-image: url(../images/woman-avatar-icon.svg);
+    background-image: url(../images/nanda3.jfif);
 }
 
 .nav-item {
